@@ -1,11 +1,18 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: transparent;
+  padding: 0.5rem 2rem;
+  background-color: rgba(13, 17, 23, 0.9); /* subtle dark translucent background */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* optional: nice blur effect */
 }
+
 
 .navbar-logo {
   color: #60a5fa;
@@ -17,8 +24,8 @@
   list-style: none;
   display: flex;
   gap: 2rem;
-  margin: 0;
-  padding: 0;
+  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 .navbar-links a {
@@ -36,6 +43,7 @@
   .navbar {
     flex-direction: column;
     gap: 1rem;
+    padding: 0;
   }
 
   .navbar-links {
