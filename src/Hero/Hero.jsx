@@ -34,7 +34,7 @@ const Hero = ({
             className="hero-button"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/assets/HemantKumar_CV.pdf"
+            href="/assets/Your_CV.pdf"
             download
           >
             {buttonText}
